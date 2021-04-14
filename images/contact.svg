@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="390" viewBox="0 0 390 390">
+  <defs>
+    <filter id="路径_2" x="0" y="0" width="390" height="390" filterUnits="userSpaceOnUse">
+      <feOffset dx="17" dy="21" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="contact" transform="translate(-1308 174)">
+    <g transform="matrix(1, 0, 0, 1, 1308, -174)" filter="url(#路径_2)">
+      <g id="路径_2-2" data-name="路径 2" transform="translate(28 24)" fill="none">
+        <path d="M150,0A150,150,0,1,1,0,150,150,150,0,0,1,150,0Z" stroke="none"/>
+        <path d="M 150 6 C 70.59812927246094 6 6 70.59812927246094 6 150 C 6 229.40185546875 70.59812927246094 294 150 294 C 229.40185546875 294 294 229.40185546875 294 150 C 294 70.59812927246094 229.40185546875 6 150 6 M 150 0 C 232.8426818847656 0 300 67.15727233886719 300 150 C 300 232.8426818847656 232.8426818847656 300 150 300 C 67.15727233886719 300 0 232.8426818847656 0 150 C 0 67.15727233886719 67.15727233886719 0 150 0 Z" stroke="none" fill="#784d5d"/>
+      </g>
+    </g>
+    <text id="Contact-2" data-name="Contact" transform="translate(1412 63)" fill="#fff" font-size="48" font-family="GeosansLight"><tspan x="0" y="0">Contact</tspan></text>
+  </g>
+</svg>

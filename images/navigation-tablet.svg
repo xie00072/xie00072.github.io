@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1009 480">
+  <defs>
+    <filter id="椭圆_1" x="0" y="0" width="486" height="480" filterUnits="userSpaceOnUse">
+      <feOffset dx="17" dy="21" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_2104" data-name="组 2104" transform="translate(185 251)">
+    <g transform="matrix(1, 0, 0, 1, -185, -251)" filter="url(#椭圆_1)">
+      <ellipse id="椭圆_1-2" data-name="椭圆 1" cx="168" cy="165" rx="168" ry="165" transform="translate(58 54)" fill="#c54860"/>
+    </g>
+    <g id="椭圆_46" data-name="椭圆 46" transform="translate(367 -115)" fill="none" stroke="#695175" stroke-width="5">
+      <circle cx="136.5" cy="136.5" r="136.5" stroke="none"/>
+      <circle cx="136.5" cy="136.5" r="134" fill="none"/>
+    </g>
+    <g id="椭圆_45" data-name="椭圆 45" transform="translate(236 -82)" fill="none" stroke="#584d7e" stroke-width="5">
+      <circle cx="91" cy="91" r="91" stroke="none"/>
+      <circle cx="91" cy="91" r="88.5" fill="none"/>
+    </g>
+    <g id="椭圆_47" data-name="椭圆 47" transform="translate(535 -156)" fill="none" stroke="#784d5d" stroke-width="5">
+      <circle cx="144.5" cy="144.5" r="144.5" stroke="none"/>
+      <circle cx="144.5" cy="144.5" r="142" fill="none"/>
+    </g>
+    <text id="About" transform="translate(51 66)" fill="#fff" font-size="32" font-family="GeosansLight"><tspan x="0" y="0">About</tspan></text>
+    <text id="Wanyi_Xie" data-name="Wanyi Xie" transform="translate(193 34)" fill="#fff" font-size="32" font-family="AmaticSC-Regular, Amatic SC"><tspan x="0" y="33">Wanyi Xie</tspan></text>
+    <text id="Fun" transform="translate(346 66)" fill="#fff" font-size="32" font-family="GeosansLight"><tspan x="0" y="0">Fun</tspan></text>
+    <text id="Projects" transform="translate(456 66)" fill="#fff" font-size="32" font-family="GeosansLight"><tspan x="0" y="0">Projects</tspan></text>
+    <text id="Contact" transform="translate(619 66)" fill="#fff" font-size="32" font-family="GeosansLight"><tspan x="0" y="0">Contact</tspan></text>
+  </g>
+</svg>
