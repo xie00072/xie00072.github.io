@@ -5,48 +5,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -61,12 +148,15 @@ body {
     font-family: Yu Gothic, Extrabold, sans-serif;
     line-height: 1.5rem;
     margin: 0 auto;
-    
+
 }
 
-footer {
+.social-media {
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 /* ----------- font -----------*/
@@ -92,7 +182,7 @@ footer {
     display: none;
 }
 
-.navigation-mobile a{
+.navigation-mobile a {
     text-decoration: none;
 }
 
@@ -107,43 +197,46 @@ footer {
 /* -------- Homepage Buttons --------*/
 
 /* about button */
-.btn-circle1 { 
-    
+.btn-circle1 {
+
     display: inline-block;
     background-color: #C54860;
     width: 20em;
     height: 20em;
 
-    
+
     text-decoration: none;
-    
+
     border-radius: 50%;
     box-shadow: 10px 15px 50px 10px #8f2b38;
 
-    
+
 }
+
 #about {
     font-size: 2rem;
     font-weight: 300;
-    
+
 }
+
 /* projects button */
 
-.btn-circle2 { 
-    
+.btn-circle2 {
+
     display: inline-block;
     background-color: #695175;
     width: 18em;
     height: 18em;
 
-    
+
     text-decoration: none;
 
     border-radius: 50%;
     box-shadow: 10px 15px 50px 10px #573a64;
 
-    
+
 }
+
 #projects {
     font-size: 2rem;
     font-weight: 300;
@@ -151,21 +244,22 @@ footer {
 
 /* fun button */
 
-.btn-circle3 { 
-    
+.btn-circle3 {
+
     display: inline-block;
     background-color: #584D7E;
     width: 15em;
     height: 15em;
 
-    
+
     text-decoration: none;
 
     border-radius: 50%;
     box-shadow: 10px 15px 50px 10px #43375e;
 
-    
+
 }
+
 #fun {
     font-size: 2rem;
     font-weight: 300;
@@ -173,21 +267,22 @@ footer {
 
 /* contact button */
 
-.btn-circle4 { 
-    
+.btn-circle4 {
+
     display: inline-block;
     background-color: #784D5D;
     width: 18em;
     height: 18em;
 
-    
+
     text-decoration: none;
 
     border-radius: 50%;
     box-shadow: 10px 15px 50px 8px #372d46;
 
-    
+
 }
+
 #contact {
     font-size: 2rem;
     font-weight: 300;
@@ -197,27 +292,45 @@ footer {
 /* circular buttons bouncing */
 
 @keyframes bounce1 {
-    0%   {transform: translateY(0px);}
+    0% {
+        transform: translateY(0px);
+    }
 
-    50% {transform: translateY(50px);}
+    50% {
+        transform: translateY(50px);
+    }
 
-    100% {transform: translateY(0px);}
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 @keyframes bounce2 {
-    0%   {transform: translate(0px, -10px);}
+    0% {
+        transform: translate(0px, -10px);
+    }
 
-    50% {transform: translate(-15px, 40px);}
+    50% {
+        transform: translate(-15px, 40px);
+    }
 
-    100% {transform: translate(0px, -10px);}
+    100% {
+        transform: translate(0px, -10px);
+    }
 }
 
 @keyframes bounce3 {
-    0%   {transform: translate(0px, -20px);}
+    0% {
+        transform: translate(0px, -20px);
+    }
 
-    50% {transform: translate(-10px, -60px);}
+    50% {
+        transform: translate(-10px, -60px);
+    }
 
-    100% {transform: translate(0px, -20px);}
+    100% {
+        transform: translate(0px, -20px);
+    }
 }
 
 #c1 {
@@ -245,18 +358,18 @@ footer {
 
 .introduction-portrait {
     width: 70%;
-   
+
+    position: absolute;
+    top: 380px;
+    right: 0;
+
+    z-index: -1;
 }
 
-
-
-
-
-
-
-
-
-
+.introduction-content {
+    margin-top: 180px;
+    padding: 3em;
+}
 
 
 
@@ -266,7 +379,7 @@ footer {
 --------------------------------------*/
 
 #project-image {
-    
+
     opacity: 60%;
 }
 
@@ -292,11 +405,13 @@ footer {
 .gallery {
     display: flex;
 }
+
 .column {
     display: block;
     margin-right: 0.5vw;
     width: 100%;
 }
+
 .item {
     overflow: hidden;
     position: relative;
@@ -304,6 +419,7 @@ footer {
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
     border-radius: 1%;
 }
+
 .img {
     display: block;
     position: relative;
@@ -367,41 +483,79 @@ footer {
 
 @media screen and (min-width: 415px) {
 
-.navigation-mobile {
-    display: none;
+    .navigation-mobile {
+        display: none;
+    }
+
+    .navigation-tablet {
+        display: block;
+
+    }
+
+    .navigation-tablet a {
+        text-decoration: none;
+    }
+
+    #social-media {
+        margin-right: 3em;
+        display: flex;
+        justify-content: flex-end;
+        gap: 2em;
+    }
+
+
+    /* --------- about page --------- */
+    .introduction-portrait {
+        width: 50%;
+
+        position: absolute;
+        top: 200px;
+        right: 0;
+
+        z-index: -1;
+
+    }
+
+
+
+    .introduction-content {
+        margin-top: 200px;
+        padding: 3em;
+    }
+
 }
 
-.navigation-tablet {
-    display: block;
-}
-
-
-
-
-
-
-/* -----------------------------------------------------------
+    /* -----------------------------------------------------------
                          Desktop Style
 --------------------------------------------------------------*/
 
-@media screen and (min-width: 1200px) {
-    .navigation-mobile  {
-        display: none;
-    }
-    .navigation-tablet {
-        display: none;
-    }
+    @media screen and (min-width: 1200px) {
+        .navigation-mobile {
+            display: none;
+        }
 
-    .navigation-desktop {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    
-    .navigation-desktop a{
-        text-decoration: none;
-    }
-    
+        .navigation-tablet {
+            display: none;
+        }
+
+        .navigation-desktop {
+            display: flex;
+            justify-content: space-between;
+        }
 
 
-}
+        .navigation-desktop a {
+            text-decoration: none;
+        }
+
+        /* --------- about page --------- */
+
+        
+
+        .introduction-content {
+            width: 60%;
+            margin: 10em;
+        }
+
+    
+    }
