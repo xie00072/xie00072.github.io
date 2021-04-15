@@ -1,3 +1,27 @@
+// typing animation on about page
+// const typedText = document.querySelector(".typed-text"); 
+
+// const textArray = ["hard", "fun", "a journey", "LIFE"];
+// const typingDelay = 200;
+// const erasingDelay = 100;
+// const newTextDelay = 2000;
+// let textArray = 0;
+// let charIndex = 0;
+
+// function type() {
+//     if(charIndex < textArray[textArrayIndex].length) {
+//         typedText.textContent += textArray[textArrayIndex].charAt(charIndex);
+//         charIndex++;
+//         setTimeout(type, typingDelay);
+//     }
+//     else {
+
+//     }
+// }
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     type();
+// });
 
 // photographs gallery slider
 let slider = document.querySelector('.slider');

@@ -172,9 +172,9 @@ body {
     height: 100%;
 }
 
-/* .bg {
+.bg {
     background: linear-gradient(135deg, #DF6C8F, #405584);
-} */
+}
 
 /* ----------- navigation ----------- */
 .navigation-desktop,
@@ -186,7 +186,7 @@ body {
     text-decoration: none;
 }
 
-/* ----------- footer ----------- */
+
 
 
 
@@ -195,6 +195,19 @@ body {
 --------------------------------------*/
 
 /* -------- Homepage Buttons --------*/
+/* rotate button text */
+.rotate-about{
+    transform: rotate(-14deg);
+}
+.rotate-projects {
+    transform: rotate(15deg);
+}
+.rotate-fun {
+    transform: rotate(20deg);
+}
+.rotate-contact {
+    transform: rotate(-19deg);
+}
 
 /* about button */
 .btn-circle1 {
@@ -216,7 +229,7 @@ body {
 #about {
     font-size: 2rem;
     font-weight: 300;
-
+   
 }
 
 /* projects button */
@@ -240,6 +253,7 @@ body {
 #projects {
     font-size: 2rem;
     font-weight: 300;
+    
 }
 
 /* fun button */
@@ -263,6 +277,7 @@ body {
 #fun {
     font-size: 2rem;
     font-weight: 300;
+    
 }
 
 /* contact button */
@@ -286,6 +301,7 @@ body {
 #contact {
     font-size: 2rem;
     font-weight: 300;
+   
 }
 
 
@@ -374,19 +390,28 @@ body {
 
 
 
+
+
+
+
+
+
+
+
 /* -----------------------------------
             Projects Page
 --------------------------------------*/
 
 #project-image {
-
-    opacity: 60%;
+    border-radius: 100px;
+    opacity: 50%;
+    transition: all 1s ease-in-out ;
+   
 }
 
 #project-image:hover {
     opacity: 100%;
-    transition-delay: 1s;
-    transition-timing-function: ease-in-out;
+    transition: all 0.5s ease-in-out 0.1s;
 }
 
 
@@ -505,7 +530,7 @@ form {
 
     /* --------- about page --------- */
     .introduction-portrait {
-        width: 50%;
+        width: 40%;
 
         position: absolute;
         top: 200px;
@@ -523,6 +548,48 @@ form {
     }
 
 }
+
+
+ /* ------------------------typing animation-------------------- */
+@media screen and (min-width: 725px) {
+    
+   
+.introduction-content h2 {
+    overflow: hidden;
+    display: inline-block;
+}
+.typing {
+    position: relative;
+    
+}
+.typing::after {
+    content: "|";
+    position: absolute;
+    right: 0; 
+    width: 100%;
+    color: #ccc;
+    background: #293241;
+    animation: typing 5s steps(30) 1s infinite alternate,
+    blink 1s infinite;
+   
+}
+
+@keyframes blink {
+    
+    50% {color: transparent;}
+   
+}
+
+@keyframes typing {
+    from { width: 100%;}
+    90%, to {width: 0%;}
+}
+
+
+}
+
+
+
 
     /* -----------------------------------------------------------
                          Desktop Style
