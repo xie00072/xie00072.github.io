@@ -190,13 +190,13 @@ body {
 /* -----------------page transition ------------------ */
 
 body {
-    animation: transition 0.75s;
+    animation: transition 1s;
 }
 
 @keyframes transition {
     from {
         opacity: 0;
-        transform: rotateX(-5deg);
+        transform: rotateX(-10deg);
     }
     to {
         opacity: 100%;
